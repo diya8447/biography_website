@@ -1,0 +1,208 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    color: beige;
+    line-height: 1.6;
+}
+
+header,
+footer {
+    color: black;
+    padding: 1rem;
+    text-align: center;
+}
+
+header {
+    background: lightsalmon;
+}
+
+aside {
+    background-color: lightgrey;
+}
+
+h3,
+h2,
+p {
+    color: black;
+}
+
+h4 {
+    background-color: lightsalmon;
+    padding: 1rem;
+    text-align: center;
+    color: black;
+    font-size: 25px;
+}
+
+
+footer {
+    background: lightsalmon;
+    font-size: 0.9rem;
+    color: black;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background: lightpink;
+    margin: 0;
+    padding: 16px;
+}
+
+nav ul li {
+    position: relative;
+    margin-right: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: blue;
+}
+
+.bio {
+    display: flex;
+    flex-direction: row;
+}
+
+.media {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #555;
+    list-style: none;
+    padding: 0.5rem 1rem;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+aside {
+    background-size: cover;
+    padding: 1rem;
+    color: white;
+}
+
+main {
+    background-color: lightgray;
+    padding: 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    color: black;
+}
+
+table th {
+    background-color: lightsalmon;
+}
+
+table tr td {
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 200px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+form ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+form ul li {
+    margin-bottom: 15px;
+}
+
+form ul li label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+form ul li input,
+form ul li textarea,
+form ul li select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form ul li input[type="submit"] {
+    background-color: #ff7e5f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+form ul li input[type="submit"] hover {
+    background-color: #feb47b;
+}
+
+main {
+    padding: 2rem;
+}
+
+main div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    justify-items: center;
+    align-items: center;
+}
+
+main div img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+main div img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+main img.img {
+    display: block;
+    max-width: 20%;
+    height: auto;
+    margin: 20px 5rem 0 5rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border: 3px solid #ddd;
+}
